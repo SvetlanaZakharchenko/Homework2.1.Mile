@@ -1,18 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        int amountticket = 100;
-        int onemile = 20;
-        boolean isboughtaticket = true;
+        int amountTicket = 100;
+        int oneMile = 20;
+        boolean isBoughtaTicket = true;
 
-        int mile;
-        if (isboughtaticket) {
-            mile = 1;
+        int miles;
+        if (isBoughtaTicket) {
+            miles =  amountTicket / oneMile;
         } else {
-            mile = 0;
+            miles = 0;
         }
 
-        int bonus = amountticket / onemile * mile;
-
-        System.out.println("Начисленные мили за купленный билет: " + bonus);
+        System.out.println("Начисленные мили за купленный билет: " + miles);
     }
 }
